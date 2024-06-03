@@ -1,0 +1,58 @@
+.card-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container-logo {
+  z-index: 25;
+  background-color: white;
+  position: relative;
+  left: 20px;
+  width: 310px;
+  height: fit-content;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 5px;
+}
+
+.description {
+  line-height: 120%;
+}
+
+.spacing {
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+// .logo-img {
+//   width: 330px;
+//   height: auto;
+// }
+@media screen and (max-width: 765px) {
+  .card-container-logo {
+    width: 40vw;
+    font-size: 85%;
+    height: min-content;
+    position: relative;
+    // bottom: 50px;
+    top: 20vh;
+    left: 5vw;
+  }
+  .links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-container-logo {
+    font-size: 70%;
+  }
+}
